@@ -1,0 +1,133 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:content-box;
+    outline:0;
+    transition:all 0.5s ease;
+}
+
+@font-face{
+    font-family: 'Lufga Bold';
+    src: url('../css/fonts/Lufga Bold.otf') format("opentype");
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Lufga Bold';
+    background-image:linear-gradient(to bottom right,rgb(255, 228, 187), rgb(248, 102, 51));
+    display: flex;
+    place-items: center;
+    justify-content:center;
+}
+
+.calculator{
+    background-color: #F9F8FD;
+    width: 70%;
+    height: 60%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.calculator .header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.calculator .header .title{
+    font-size: 26px;
+}
+
+.calculator .display-screen{
+    height: 15%;
+    width: 100%;
+}
+
+#display{
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+    font-family: system-ui;
+    font-size:30px;
+    color: #191A21;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+.container .calculator .buttons{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    justify-items: center;
+}
+
+.calculator .buttons table{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.calculator .buttons table tr{
+    height: 20%;
+    display: flex;
+    place-items: center;
+    justify-content: space-evenly;
+    margin-bottom:8px;
+}
+
+.calculator .buttons table tr td{
+    width: 18%;
+    height: 90%;
+}
+
+.calculator .buttons table tr td button{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui;
+    font-size: 30px;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator .buttons table tr td button.btn-number{
+    background-color: #ECF9FC;
+}
+
+.calculator .buttons table tr td button.btn-operator{
+    color:#f86633;
+}
+
+.calculator button.btn-equal{
+    background-color: #42C09D;
+    color: #F9F8FD;
+}
+
+.calculator .buttons table tr td button:hover{
+    background-color: #ffd6c5;
+}
+
+/*---- Customization for mobile phones ----*/
+
+@media only screen and (max-width: 420px){
+    .calculator .display-screen{
+        height: 10%;
+    }
+
+    .calculator{
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
