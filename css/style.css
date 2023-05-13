@@ -129,5 +129,14 @@ hr{
         width: 100%;
         border-radius: 0;
     }
+
+    .buttons{
+        height: 65%;
+    }
+
+    .calculator .buttons table tr td{
+        height: 60%;
+        width: 24%;
+    }
 }
 
